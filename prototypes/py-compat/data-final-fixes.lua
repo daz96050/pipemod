@@ -149,10 +149,6 @@ do
             }
         }
 
-        if mods["py_ht_pipes_reskin"] then
-            tiers[3].shifts = tiers[2].shifts
-        end
-
         for name, dirmap in pairs(variants) do
             for tier, tier_traits in pairs(tiers) do
                 local color = tier_traits.color
