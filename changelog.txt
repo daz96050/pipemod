@@ -1,4 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 09. 07. 2026
+  Features:
+    - New optional startup setting "Simplified recipes" (off by default), integrated from
+      the standalone "Advanced Fluid Handling (simple)" addon (billbo99). No separate
+      download needed. Flattens pipe/pump/valve recipes down to base materials and hides
+      the intermediate items (couplers, pipe segments, swivel joint).
+    - Simplified recipes runs after the Pyanodon layer, so higher tiers use their own tier
+      material automatically (e.g. niobium ends up in the niobium-tier pipes) with no
+      tier-specific hardcoding. Without Py: base/T2 use iron, T3 uses iron + steel.
+    - Adds Foundry casting recipes for the pipes when Space Age's foundry tech is present.
+  Bugfixes:
+    - Fixed a typo (new_oder) carried from the source addon that dropped the casting
+      recipe's sort order.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 09. 07. 2026
   Features:

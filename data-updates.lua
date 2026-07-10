@@ -5,3 +5,9 @@
 if _G.mods["pyindustry"] and _G.mods["pyhightech"] then
     require("prototypes.py-compat.data-updates")
 end
+
+-- Simplified recipes (optional). Must run AFTER Py-compat so that flattening the
+-- recipe tree picks up Py's tier materials (e.g. niobium for niobium pipes).
+if settings.startup["afh-simple-recipes"].value then
+    require("prototypes.simple-recipes")
+end
