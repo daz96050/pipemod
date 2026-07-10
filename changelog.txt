@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.8
-Date: 09. 07. 2026
+Date: 9 July 2026
   Features:
     - Configurable Valves compatibility: when the "configurable-valves" mod is installed,
       this mod's fixed overflow/top-up/check valve recipes are retired by default so the two
@@ -10,7 +10,7 @@ Date: 09. 07. 2026
       is present.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
-Date: 09. 07. 2026
+Date: 9 July 2026
   Bugfixes:
     - Pyanodon: pipes that contain a swivel joint (1-to-1, 1-to-2, 1-to-3 and their t2/t3
       tiers) no longer require "small parts" (small-parts-01). The swivel joint is now built
@@ -18,7 +18,7 @@ Date: 09. 07. 2026
       small parts.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.6
-Date: 09. 07. 2026
+Date: 9 July 2026
   Changes:
     - Pyanodon: greatly reduced the scarce tier material needed for advanced pipes. The
       niobium/multipurpose material now lives in the pipe coupler (used 1-4x per pipe)
@@ -28,7 +28,7 @@ Date: 09. 07. 2026
     - Underground pipe segments no longer consume scarce tier material (iron filler only).
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
-Date: 09. 07. 2026
+Date: 9 July 2026
   Bugfixes:
     - Pipe-to-ground entity ghosts can now be rotated with CTRL + R (previously the rotation
       was silently ignored on ghosts).
@@ -37,7 +37,7 @@ Date: 09. 07. 2026
       (Integrated from TheStaplergun/pipemod PR #36.)
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: 09. 07. 2026
+Date: 9 July 2026
   Features:
     - New optional startup setting "Simplified recipes" (off by default), integrated from
       the standalone "Advanced Fluid Handling (simple)" addon (billbo99). No separate
@@ -52,7 +52,7 @@ Date: 09. 07. 2026
       recipe's sort order.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: 09. 07. 2026
+Date: 9 July 2026
   Features:
     - Built-in Pyanodon (pyindustry + pyhightech) compatibility, integrated from the
       standalone "Advanced Fluid Handling For PyMods" addon (Dremon, created by Sopel).
@@ -66,58 +66,58 @@ Date: 09. 07. 2026
       the 4-to-4 pipe is removed; tiers renamed to Iron / Niobium / Multipurpose.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.7
-Date: 10. 10. 2025
+Date: 10 October 2025
   Changes:
     - Remove support for space valves in SE
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
-Date: 17. 05. 2025
+Date: 17 May 2025
   Changes:
     - Add color to underground pump icons to make them easier to distinguish in your inventory and on recipe pages.
   Features:
     - Add valves back using the new valve prototype. Flow rate is determined by the valve type and threshold, up to 6000/s for a base quality entity.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
-Date: 31. 03. 2025
+Date: 31 March 2025
   Fixes:
     - Fix fluid being flushed from entire network connected to a pipe when using CTRL + R.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.4
-Date: 05. 12. 2024
+Date: 5 December 2024
   Fixes:
     - Fix non space-age pipe connection issues.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.3
-Date: 19. 11. 2024
+Date: 19 November 2024
   Fixes:
     - Fix underground pump not showing correct circuit connection sprites
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
-Date: 19. 11. 2024
+Date: 19 November 2024
   Fixes:
     - Fix T2 and T3 item not placing the right pump tier
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.1
-Date: 19. 11. 2024
+Date: 19 November 2024
   Changes:
     - Added Tier 2 and Tier 3 to the Underground Mini pump with recipes that work for space age or base game
   Fixes:
     - Removed references to Space Exploration and valves in info.json
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: 13. 11. 2024
+Date: 13 November 2024
   Changes:
     - Update to 2.0
     - Removed Valves since the fluid engine has changed
     - Removed hard coded Space Exploration compatibility and Bobsmod Compatibility, allowing for another mod creator to fill that gap
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
-Date: 14. 04. 2020
+Date: 14 April 2020
   Changes:
     - Change info.json name to match mod portal name and be more relevant.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
-Date: 14. 04. 2020
+Date: 14 April 2020
   Features:
     - Wire compatibility (finally) for the underground pump.
   Fixes:
@@ -125,13 +125,13 @@ Date: 14. 04. 2020
     - Fix collision layer issues.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
-Date: 30. 11. 2020
+Date: 30 November 2020
   Features:
     - Update for 1.1
     - Single tile underground pipe junctions now draw their contained fluid icon in Alt Mode.
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.6
-Date: 12. 06. 2020
+Date: 12 June 2020
   Features:
   Changes:
     - Tweak science and recipe of advanced space pipes. Now requires Heavy Girders.
@@ -139,21 +139,21 @@ Date: 12. 06. 2020
     - Underground pipes suddenly gained an above ground port. Removed this port.
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.4
-Date: 09. 06. 2020
+Date: 9 June 2020
   Features:
   Changes:
   Fixes:
     - Space pipes could not rotate underground ports.
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.3
-Date: 08. 06. 2020
+Date: 8 June 2020
   Features:
   Changes:
   Fixes:
     - Mod was not working if space exploration was not installed.
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.2
-Date: 08. 06. 2020
+Date: 8 June 2020
   Features:
     - Space exploration compatible pipes added that have over double the reach.
   Changes:
@@ -161,21 +161,21 @@ Date: 08. 06. 2020
     - Script raised built no longer throws an error.
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.1
-Date: 01. 05. 2020
+Date: 1 May 2020
   Features:
   Changes:
   Fixes:
     - Bugfixes as per users feedback in mods.factorio.com
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.6
-Date: 24. 07. 2019
+Date: 24 July 2019
   Features:
   Changes:
     - Remove the puff of smoke when rotating the underground ports of pipe-to-ground or adjusting valves
   Fixes:
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.5
-Date: 24. 07. 2019
+Date: 24 July 2019
   Features:
     - Add blue arrow to underground pump to make it clear even without alt-mode on.
     - Add thumbnail for mod portal.
@@ -183,7 +183,7 @@ Date: 24. 07. 2019
   Fixes:
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.4
-Date: 09. 07. 2019
+Date: 9 July 2019
   Features:
   Changes:
   Fixes:
@@ -191,14 +191,14 @@ Date: 09. 07. 2019
     - Mining results for underground pipe extensions
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.3
-Date: 09. 07. 2019
+Date: 9 July 2019
   Features:
   Changes:
   Fixes:
     - Fix bad prototype accidental migration. (Rotation bug)
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.2
-Date: 09. 07. 2019
+Date: 9 July 2019
   Features:
   Changes:
     - Major graphics overhaul
@@ -207,7 +207,7 @@ Date: 09. 07. 2019
     - Fix rotational directions for 1-2 pipes
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.1
-Date: 25. 5. 2019
+Date: 25 May 2019
   Features:
   Changes:
     - Pump now reaches all three tiers regardless.
@@ -216,7 +216,7 @@ Date: 25. 5. 2019
     - Potential fix for error with "next upgrade target" on valves
 ---------------------------------------------------------------------------------------------------
 Version: 0.17.0
-Date: 22. 3. 2019
+Date: 22 March 2019
   Features:
     - Add reverse rotation (finally)
     - Update to 0.17
@@ -227,33 +227,33 @@ Date: 22. 3. 2019
     - Compatible with pipelayer
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.66
-Date: 14. 10. 2018
+Date: 14 October 2018
   Changes:
     - Add adjustable overflow/top-up valves, along with check valves.
   Fixes:
     - Fix issue with pipes-to-ground not being able to be fast replaced.
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.65
-Date: 10/11/2018
+Date: 11 October 2018
   Changes:
     - Removed pipeclamp (get PickerPipeTools)
     - Removed pipehighlight (get PickerPipeTools)
     - Blueprinted items behave like they should now. No more scripts to fix.
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.64
-Date: 9/26/2018
+Date: 26 September 2018
   Features:
     - Added T1 pipecover graphics
   BugFixes:
     - Fixed issue with case sensitivity in certain icon paths (success)
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.63
-Date: 9/26/2018
+Date: 26 September 2018
   BugFixes:
     - Fixed issue with case sensitivity in certain icon paths (Failed)
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.62
-Date: 9/26/2018
+Date: 26 September 2018
   Features:
     - Moved clamp script to own file
     - Optional dependency for pipe-clamp mod
@@ -262,7 +262,7 @@ Date: 9/26/2018
     - Fix issue brought up in discussions forum with [] in pipe name
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.61
-Date: 9/25/2018
+Date: 25 September 2018
   Features:
     - Adds ability to clamp properly against square and most rectangular entities. Let me know if there are any problems.
     - Change flying text notifications. Unclamped is now yellow.
