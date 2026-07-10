@@ -19,6 +19,8 @@ if _G.mods["pyindustry"] and _G.mods["pyhightech"] then
             type = "bool-setting",
             name = "afhfp-reskin-pipe-to-grounds",
             setting_type = "startup",
+            -- On by default: the Py-styled placed pipes look better. Note this only reskins
+            -- the placed entity, not the item/tech icon, so those don't match the placed pipe.
             default_value = true
         },
         {

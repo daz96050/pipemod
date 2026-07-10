@@ -248,22 +248,38 @@ do
         {name = "niobium-plate", amount = 1, type = "item"},
     }
 
+    -- Multipurpose materials live in the coupler (used only 1-4x per pipe), matching Py's
+    -- ht-pipe recipe (niobium + plastic + titanium); rubber added per user request.
+    -- The niobium comes via the medium-pipe-coupler this builds on.
     data.raw.recipe["large-pipe-coupler"].ingredients = {
         {name = "medium-pipe-coupler", amount = 1, type = "item"},
-        {name = "rubber", amount = 1, type = "item"},
         {name = "plastic-bar", amount = 1, type = "item"},
+        {name = "rubber", amount = 4, type = "item"},
+        {name = "titanium-plate", amount = 1, type = "item"},
     }
 
+    -- Segments carry NO scarce tier material: a pipe uses 5-20 segments, so any tier
+    -- material here multiplies out of control. The tier material lives in the coupler.
     data.raw.recipe["underground-pipe-segment-t2"].ingredients = {
         {name = "underground-pipe-segment-t1", amount = 1, type = "item"},
-        {name = "niobium-plate", amount = 1, type = "item"}
+        {name = "iron-plate", amount = 1, type = "item"}
     }
 
     data.raw.recipe["underground-pipe-segment-t3"].ingredients = {
         {name = "underground-pipe-segment-t2", amount = 1, type = "item"},
-        {name = "rubber", amount = 1, type = "item"},
-        {name = "plastic-bar", amount = 1, type = "item"},
+        {name = "iron-plate", amount = 1, type = "item"},
     }
+
+    -- Swivel joint: rebuild from basic materials. Vanilla AFH makes it from an
+    -- iron-gear-wheel, but under Py the gear chain drags in small-parts-01, which then
+    -- appears in every pipe that contains a swivel joint (the 1-to-1 / 1-to-2 / 1-to-3
+    -- variants and their t2/t3 tiers). Plain iron plates keep it a trivial part with no
+    -- scarce or complex intermediates in its tree.
+    if data.raw.recipe["swivel-joint"] then
+        data.raw.recipe["swivel-joint"].ingredients = {
+            {name = "iron-plate", amount = 2, type = "item"},
+        }
+    end
 
 --  Adjust technology requirements
     data.raw.technology["advanced-underground-piping-t2"].prerequisites = {

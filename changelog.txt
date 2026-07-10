@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 09. 07. 2026
+  Bugfixes:
+    - Pyanodon: pipes that contain a swivel joint (1-to-1, 1-to-2, 1-to-3 and their t2/t3
+      tiers) no longer require "small parts" (small-parts-01). The swivel joint is now built
+      from plain iron plates instead of an iron-gear-wheel, whose Py recipe chain pulled in
+      small parts.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 09. 07. 2026
+  Changes:
+    - Pyanodon: greatly reduced the scarce tier material needed for advanced pipes. The
+      niobium/multipurpose material now lives in the pipe coupler (used 1-4x per pipe)
+      instead of every underground segment (5-20x per pipe), so a Niobium 1-to-1 pipe now
+      costs ~1 niobium instead of ~6. Multipurpose couplers use niobium + plastic + rubber
+      + titanium.
+    - Underground pipe segments no longer consume scarce tier material (iron filler only).
+---------------------------------------------------------------------------------------------------
 Version: 0.0.5
 Date: 09. 07. 2026
   Bugfixes:

@@ -50,6 +50,15 @@ download is needed. All Py logic is gated on `_G.mods["pyindustry"] and _G.mods[
   braided-pipe `connection_category`, pump specs, tech prerequisites; doubles valve flow;
   removes the 4-to-4 pipe; applies Iron/Niobium/Multipurpose naming.
 - `prototypes/py-compat/data-final-fixes.lua` — reskins pipe-to-grounds to match Py pipes.
+  **On by default** (`afhfp-reskin-pipe-to-grounds`) — the maintainer prefers the Py look.
+  Known caveat: it rewrites only the placed entity's `pictures`, NOT the item/tech `icon`,
+  so the inventory/tech icon doesn't match the placed pipe. Accepted for now; fully fixing
+  it would mean reskinning the icons too.
+- `data-updates.lua` also rebuilds the `swivel-joint` recipe (plain iron plates) under Py.
+  Vanilla builds it from `iron-gear-wheel`, whose Py chain pulls in `small-parts-01`, which
+  then showed up in every swivel-containing pipe (1→1 / 1→2 / 1→3 and their tiers). The
+  scarce tier material was also moved off per-segment recipes onto the couplers so a single
+  pipe no longer multiplies niobium 5–20×.
 - Depends on Py prototypes existing (`niobium-pipe-to-ground`, `ht-pipes-to-ground`,
   `niobium-plate`, `niobium` / `coal-processing-3` techs, the `py-braided-pipes` setting) —
   all safe because the gate guarantees Py is loaded.
