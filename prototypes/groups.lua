@@ -4,7 +4,7 @@ local base_groups = {
     name = "advanced-underground-piping",
     order = "z",
     inventory_order = "z",
-    icon = "__underground-pipe-pack__/graphics/item-group/fluid-handling-underground.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/item-group/fluid-handling-underground.png",
 	icon_size = 64,
   },
   {

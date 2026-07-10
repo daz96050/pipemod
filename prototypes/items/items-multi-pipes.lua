@@ -4,7 +4,7 @@ data:extend(
     {
       type = "item",
       name = "4-to-4-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/four-to-four-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/four-to-four-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "multi-pipes",

@@ -1,0 +1,154 @@
+# PowerShell script to package and deploy the mod with forward slashes for cross-platform compatibility
+
+param(
+    [switch]$NoBump
+)
+
+# Get current directory as mod folder
+$modPath = $PSScriptRoot
+$infoJsonPath = Join-Path -Path $modPath -ChildPath "info.json"
+$factorioModsPath = Join-Path -Path $env:APPDATA -ChildPath "Factorio\mods"
+
+
+# Load .NET assembly for zip creation
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+function Increment-PatchVersion {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Version
+    )
+
+    if ($Version -notmatch '^([0-9]+)\.([0-9]+)\.([0-9]+)$') {
+        throw "Version '$Version' is not in major.minor.patch format."
+    }
+
+    $major = [int]$Matches[1]
+    $minor = [int]$Matches[2]
+    $patch = [int]$Matches[3]
+
+    return "$major.$minor.$($patch + 1)"
+}
+
+# Function to validate and create the Factorio mods directory
+function Ensure-ModsDirectory {
+    if (-not (Test-Path -Path $factorioModsPath)) {
+        New-Item -Path $factorioModsPath -ItemType Directory -Force | Out-Null
+        Write-Host "Created Factorio mods directory: $factorioModsPath"
+    }
+}
+
+# Check if mod folder exists
+if (-not (Test-Path -Path $modPath)) {
+    Write-Error "Mod folder '$modPath' not found."
+    exit 1
+}
+
+# Read info.json to get version
+if (-not (Test-Path -Path $infoJsonPath)) {
+    Write-Error "info.json not found at '$infoJsonPath'."
+    exit 1
+}
+
+try {
+    $info = Get-Content -Path $infoJsonPath -Raw | ConvertFrom-Json
+    $version = $info.version
+    $modName = $info.name
+    if (-not $version) {
+        Write-Error "Version field not found in info.json."
+        exit 1
+    }
+
+    if (-not $NoBump) {
+        $version = Increment-PatchVersion -Version $version
+        $info.version = $version
+        $info | ConvertTo-Json -Depth 100 | Set-Content -Path $infoJsonPath -Encoding UTF8
+        Write-Host "Bumped version to: $version"
+    } else {
+        Write-Host "Skipping version bump because -NoBump was specified."
+    }
+} catch {
+    Write-Error "Failed to parse or update info.json: $_"
+    exit 1
+}
+$tempDir = Join-Path -Path $PSScriptRoot -ChildPath "temp_$modName"
+# Define zip file name and path
+$zipName = "${modName}_${version}.zip"
+$zipPath = Join-Path -Path $PSScriptRoot -ChildPath $zipName
+
+# Create temporary subdirectory for zip structure
+if (Test-Path -Path $tempDir) {
+    try {
+        Remove-Item -Path $tempDir -Recurse -Force
+        Write-Host "Removed existing temporary directory: $tempDir"
+    } catch {
+        Write-Error "Failed to remove existing temporary directory: $_"
+        exit 1
+    }
+}
+
+try {
+    New-Item -Path $tempDir -ItemType Directory -Force | Out-Null
+    New-Item -Path (Join-Path -Path $tempDir -ChildPath $modName) -ItemType Directory -Force | Out-Null
+    # Copy all files to the subdirectory, excluding the temp directory and zip files
+    Get-ChildItem -Path $modPath -Exclude "temp_*", "*.zip", ".github",".idea",".vscode","*.ps1" | Copy-Item -Destination (Join-Path -Path $tempDir -ChildPath $modName) -Recurse -Force
+    Write-Host "Created temporary directory structure: $tempDir\$modName"
+} catch {
+    Write-Error "Failed to create temporary directory structure: $_"
+    exit 1
+}
+
+# Remove existing zip file if it exists
+if (Test-Path -Path $zipPath) {
+    try {
+        Remove-Item -Path $zipPath -Force
+        Write-Host "Removed existing zip file: $zipPath"
+    } catch {
+        Write-Error "Failed to remove existing zip file: $_"
+        exit 1
+    }
+}
+
+# Create zip archive with forward slashes using System.IO.Compression.ZipFile
+try {
+    $zip = [System.IO.Compression.ZipFile]::Open($zipPath, [System.IO.Compression.ZipArchiveMode]::Create)
+    $files = Get-ChildItem -Path (Join-Path -Path $tempDir -ChildPath $modName) -Recurse -File
+    foreach ($file in $files) {
+        $relativePath = $file.FullName.Substring($tempDir.Length + 1).Replace('\', '/')
+        $entry = $zip.CreateEntry($relativePath)
+        $entryStream = $entry.Open()
+        $fileStream = $file.OpenRead()
+        $fileStream.CopyTo($entryStream)
+        $fileStream.Close()
+        $entryStream.Close()
+    }
+    $zip.Dispose()
+    Write-Host "Created zip archive with forward slashes: $zipPath"
+} catch {
+    Write-Error "Failed to create zip archive: $_"
+    exit 1
+}
+
+# Clean up temporary directory
+try {
+    Remove-Item -Path $tempDir -Recurse -Force
+    Write-Host "Removed temporary directory: $tempDir"
+} catch {
+    Write-Error "Failed to clean up temporary directory: $_"
+    exit 1
+}
+
+# Ensure Factorio mods directory exists
+Ensure-ModsDirectory
+
+# Copy zip to Factorio mods directory, overwriting if exists
+$destinationZipPath = Join-Path -Path $factorioModsPath -ChildPath $zipName
+try {
+    Copy-Item -Path $zipPath -Destination $destinationZipPath -Force
+    Write-Host "Copied mod to: $destinationZipPath"
+} catch {
+    Write-Error "Failed to copy mod to Factorio mods directory: $_"
+    exit 1
+}
+
+Write-Host "Mod packaging and deployment completed successfully!"

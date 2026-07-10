@@ -111,7 +111,7 @@ local levelsTable = {
   ["1"] = 1,
 }
 
-local file_path = "__underground-pipe-pack__/graphics/entity/level-"
+local file_path = "__advanced-fluid-handling-forked__/graphics/entity/level-"
 local function build_picture_table(type, variant, level)
   if variant == "-perpendicular-secondary-" then
     variant = "-perpendicular-"
@@ -168,7 +168,7 @@ for types, sets in pairs(namesTable) do
           currentPipe.placeable_by = {item = types .. datas.mine_and_place .. "-t" .. levelsS .. "-pipe", count = 1}
         end
 
-        currentPipe.icon = "__underground-pipe-pack__/graphics/icons/" .. datas.icon .. "-t" .. levelsS .. ".png"
+        currentPipe.icon = "__advanced-fluid-handling-forked__/graphics/icons/" .. datas.icon .. "-t" .. levelsS .. ".png"
 
         currentPipe.icon_size = 32
         currentPipe.collision_mask = afh_normal_mask

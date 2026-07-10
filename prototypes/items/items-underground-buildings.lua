@@ -12,11 +12,11 @@ data:extend(
       name = "underground-mini-pump",
       icons = {
         {
-          icon = "__underground-pipe-pack__/graphics/icons/underground-mini-pump.png",
+          icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-mini-pump.png",
           icon_size = 32,
         },
         {
-          icon = "__underground-pipe-pack__/graphics/icons/hr-underground-metal-mask.png",
+          icon = "__advanced-fluid-handling-forked__/graphics/icons/hr-underground-metal-mask.png",
           icon_size = 96,
           scale = 1/2,
           tint = tints.yellow,
@@ -35,11 +35,11 @@ data:extend(
       name = "underground-mini-pump-t2",
       icons = {
         {
-          icon = "__underground-pipe-pack__/graphics/icons/underground-mini-pump.png",
+          icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-mini-pump.png",
           icon_size = 32,
         },
         {
-          icon = "__underground-pipe-pack__/graphics/icons/hr-underground-metal-mask.png",
+          icon = "__advanced-fluid-handling-forked__/graphics/icons/hr-underground-metal-mask.png",
           icon_size = 96,
           scale = 1/2,
           tint = tints.red,
@@ -58,11 +58,11 @@ data:extend(
       name = "underground-mini-pump-t3",
       icons = {
         {
-          icon = "__underground-pipe-pack__/graphics/icons/underground-mini-pump.png",
+          icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-mini-pump.png",
           icon_size = 32,
         },
         {
-          icon = "__underground-pipe-pack__/graphics/icons/hr-underground-metal-mask.png",
+          icon = "__advanced-fluid-handling-forked__/graphics/icons/hr-underground-metal-mask.png",
           icon_size = 96,
           scale = 1/2,
           tint = tints.blue,

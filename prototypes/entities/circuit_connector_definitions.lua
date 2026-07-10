@@ -1,4 +1,4 @@
-local file_path = "__underground-pipe-pack__/graphics/entity/circuit-connector/"
+local file_path = "__advanced-fluid-handling-forked__/graphics/entity/circuit-connector/"
 underground_pump_connector_template =
 {
   connector_main =

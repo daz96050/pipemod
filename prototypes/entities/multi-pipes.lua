@@ -1,7 +1,7 @@
 local pipes = {}
 local pipe = util.table.deepcopy(data.raw["pipe"]["pipe"])
 pipe.name = "4-to-4-pipe"
-pipe.icon = "__underground-pipe-pack__/graphics/icons/four-to-four-t1.png"
+pipe.icon = "__advanced-fluid-handling-forked__/graphics/icons/four-to-four-t1.png"
 pipe.icon_size = 32
 pipe.minable = {hardness = 0.2, mining_time = 0.5, result = "4-to-4-pipe"}
 pipe.underground_collision_mask = underground_collision_mask
@@ -66,7 +66,7 @@ data:extend(pipes)
     type = "pipe",
     name = "4-to-4-pipe",
     clamped = true,
-    icon = "__underground-pipe-pack__/graphics/icons/four-to-four-t1.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/four-to-four-t1.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "4-to-4-pipe"},

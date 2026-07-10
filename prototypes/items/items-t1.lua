@@ -4,7 +4,7 @@ data:extend(
     {
       type = "item",
       name = "one-to-one-forward-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/one-to-one-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/one-to-one-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "pipes-to-ground",
@@ -16,7 +16,7 @@ data:extend(
     {
       type = "item",
       name = "one-to-two-perpendicular-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/one-to-two-parallel-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/one-to-two-parallel-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "pipes-to-ground",
@@ -27,7 +27,7 @@ data:extend(
     --[[{
       type = "item",
       name = "one-to-two-L-FL-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/one-to-two-L-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/one-to-two-L-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "pipes-to-ground",
@@ -39,7 +39,7 @@ data:extend(
     {
       type = "item",
       name = "one-to-three-forward-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/one-to-three-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/one-to-three-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "pipes-to-ground",
@@ -51,7 +51,7 @@ data:extend(
     {
       type = "item",
       name = "one-to-four-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/one-to-four-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/one-to-four-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "pipes-to-ground",
@@ -63,7 +63,7 @@ data:extend(
     {
       type = "item",
       name = "underground-i-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/underground-i-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-i-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-pipes",
@@ -75,7 +75,7 @@ data:extend(
     {
       type = "item",
       name = "underground-L-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/underground-L-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-L-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-pipes",
@@ -87,7 +87,7 @@ data:extend(
     {
       type = "item",
       name = "underground-t-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/underground-t-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-t-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-pipes",
@@ -99,7 +99,7 @@ data:extend(
     {
       type = "item",
       name = "underground-cross-pipe",
-      icon = "__underground-pipe-pack__/graphics/icons/underground-cross-t1.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-cross-t1.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-pipes",

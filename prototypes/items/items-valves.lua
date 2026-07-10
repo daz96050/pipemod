@@ -4,7 +4,7 @@ data:extend(
     {
       type = "item",
       name = "80-overflow-valve",
-      icon = "__underground-pipe-pack__/graphics/icons/overflow-valve.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/overflow-valve.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-buildings",
@@ -16,7 +16,7 @@ data:extend(
     {
       type = "item",
       name = "80-top-up-valve",
-      icon = "__underground-pipe-pack__/graphics/icons/top-up-valve.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/top-up-valve.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-buildings",
@@ -27,7 +27,7 @@ data:extend(
     {
       type = "item",
       name = "check-valve",
-      icon = "__underground-pipe-pack__/graphics/icons/check-valve.png",
+      icon = "__advanced-fluid-handling-forked__/graphics/icons/check-valve.png",
       icon_size = 32,
       flags = nil,
       subgroup = "underground-buildings",

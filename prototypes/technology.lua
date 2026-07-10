@@ -4,7 +4,7 @@ local technologies =
         type = 'technology',
         name = 'advanced-underground-piping',
         icon_size = 128,
-        icon = '__underground-pipe-pack__/graphics/technology/advanced-underground-piping-t1.png',
+        icon = '__advanced-fluid-handling-forked__/graphics/technology/advanced-underground-piping-t1.png',
         prerequisites = {'fluid-handling'},
         effects = {
             -- ONE TO ONE PIPES
@@ -90,7 +90,7 @@ local technologies =
         type = 'technology',
         name = 'advanced-underground-piping-t2',
         icon_size = 128,
-        icon = '__underground-pipe-pack__/graphics/technology/advanced-underground-piping-t2.png',
+        icon = '__advanced-fluid-handling-forked__/graphics/technology/advanced-underground-piping-t2.png',
         prerequisites = {'advanced-underground-piping'},
         effects = {
             -- ONE TO ONE PIPES
@@ -162,7 +162,7 @@ local technologies =
         type = 'technology',
         name = 'advanced-underground-piping-t3',
         icon_size = 128,
-        icon = '__underground-pipe-pack__/graphics/technology/advanced-underground-piping-t3.png',
+        icon = '__advanced-fluid-handling-forked__/graphics/technology/advanced-underground-piping-t3.png',
         prerequisites = {'advanced-underground-piping-t2'},
         effects = {
             -- ONE TO ONE PIPES

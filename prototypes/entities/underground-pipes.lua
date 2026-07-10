@@ -73,8 +73,8 @@ local levels_table = {
     --[5] = Color.from_rgb(5,73,53,255)
 }
 
-local file_path = "__underground-pipe-pack__/graphics/entity/underground-cap/"
-local a_file_path = "__underground-pipe-pack__/graphics/entity/arrows/"
+local file_path = "__advanced-fluid-handling-forked__/graphics/entity/underground-cap/"
+local a_file_path = "__advanced-fluid-handling-forked__/graphics/entity/arrows/"
 
 local function build_picture_table(variants, color)
     local picture_table = {}
@@ -111,7 +111,7 @@ local function build_picture_table(variants, color)
                     shift = {0,0.1875},
                 },
                 {
-                    filename = "__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png",
+                    filename = "__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png",
                     priority = "high",
                     width = 96,
                     height = 96,
@@ -139,7 +139,7 @@ for name, properties in pairs(names_table) do
             current_pipe.minable.result = name .. "-t" .. level .. "-pipe"
         end
         current_pipe.collision_mask = afh_walkable_mask
-        current_pipe.icon = "__underground-pipe-pack__/graphics/icons/" .. name .. "-t" .. level .. ".png"
+        current_pipe.icon = "__advanced-fluid-handling-forked__/graphics/icons/" .. name .. "-t" .. level .. ".png"
 
         current_pipe.icon_size = 32
         current_pipe.selection_priority = 51

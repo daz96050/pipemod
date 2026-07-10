@@ -17,7 +17,7 @@ for level, color in pairs(levels_table) do
     else
         current_pump.name = "underground-mini-pump-t" .. level
     end
-    current_pump.icon = '__underground-pipe-pack__/graphics/icons/underground-mini-pump.png'
+    current_pump.icon = '__advanced-fluid-handling-forked__/graphics/icons/underground-mini-pump.png'
     current_pump.icon_size = 32
     --The name and the minable results are usually the same
     current_pump.minable.result = current_pump.name
@@ -67,7 +67,7 @@ for level, color in pairs(levels_table) do
         north = {
             layers = {
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-north.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-north.png',
                     width = 96,
                     height = 96,
                     scale = 0.5,
@@ -77,7 +77,7 @@ for level, color in pairs(levels_table) do
                     shift = {0, 0.1875}
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-N.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-N.png',
                     priority = 'extra-high',
                     width = 96,
                     height = 96,
@@ -88,7 +88,7 @@ for level, color in pairs(levels_table) do
                     scale = 0.5
                 },
                 {
-                    filename = "__underground-pipe-pack__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
+                    filename = "__advanced-fluid-handling-forked__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
                     priority = "extra-high",
                     width = 96,
                     height = 96,
@@ -99,7 +99,7 @@ for level, color in pairs(levels_table) do
                     shift = {0,0.1875},
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                     priority = 'high',
                     width = 96,
                     height = 96,
@@ -113,7 +113,7 @@ for level, color in pairs(levels_table) do
         east = {
             layers = {
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-east.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-east.png',
                     width = 96,
                     height = 96,
                     scale = 0.5,
@@ -123,7 +123,7 @@ for level, color in pairs(levels_table) do
                     shift = {0, 0.1875}
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-E.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-E.png',
                     priority = 'extra-high',
                     width = 96,
                     height = 96,
@@ -134,7 +134,7 @@ for level, color in pairs(levels_table) do
                     scale = 0.5
                 },
                 {
-                    filename = "__underground-pipe-pack__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
+                    filename = "__advanced-fluid-handling-forked__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
                     priority = "extra-high",
                     width = 96,
                     height = 96,
@@ -145,7 +145,7 @@ for level, color in pairs(levels_table) do
                     shift = {0,0.1875},
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                     priority = 'high',
                     width = 96,
                     height = 96,
@@ -159,7 +159,7 @@ for level, color in pairs(levels_table) do
         south = {
             layers = {
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-south.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-south.png',
                     width = 96,
                     height = 96,
                     scale = 0.5,
@@ -169,7 +169,7 @@ for level, color in pairs(levels_table) do
                     shift = {0, 0.1875}
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-S.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-S.png',
                     priority = 'extra-high',
                     width = 96,
                     height = 96,
@@ -180,7 +180,7 @@ for level, color in pairs(levels_table) do
                     scale = 0.5
                 },
                 {
-                    filename = "__underground-pipe-pack__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
+                    filename = "__advanced-fluid-handling-forked__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
                     priority = "extra-high",
                     width = 96,
                     height = 96,
@@ -191,7 +191,7 @@ for level, color in pairs(levels_table) do
                     shift = {0,0.1875},
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                     priority = 'high',
                     width = 96,
                     height = 96,
@@ -205,7 +205,7 @@ for level, color in pairs(levels_table) do
         west = {
             layers = {
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-west.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-west.png',
                     width = 96,
                     height = 96,
                     scale = 0.5,
@@ -215,7 +215,7 @@ for level, color in pairs(levels_table) do
                     shift = {0, 0.1875}
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-W.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-W.png',
                     priority = 'extra-high',
                     width = 96,
                     height = 96,
@@ -226,7 +226,7 @@ for level, color in pairs(levels_table) do
                     scale = 0.5
                 },
                 {
-                    filename = "__underground-pipe-pack__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
+                    filename = "__advanced-fluid-handling-forked__/graphics/entity/underground-cap/hr-underground-metal-mask.png",
                     priority = "extra-high",
                     width = 96,
                     height = 96,
@@ -237,7 +237,7 @@ for level, color in pairs(levels_table) do
                     shift = {0,0.1875},
                 },
                 {
-                    filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                    filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                     priority = 'high',
                     width = 96,
                     height = 96,
@@ -258,7 +258,7 @@ data:extend(
         {
             type = 'pump',
             name = 'underground-mini-pump',
-            icon = '__underground-pipe-pack__/graphics/icons/underground-mini-pump.png',
+            icon = '__advanced-fluid-handling-forked__/graphics/icons/underground-mini-pump.png',
             icon_size = 32,
             flags = {'placeable-neutral', 'player-creation'},
             minable = {mining_time = 1, result = 'underground-mini-pump'},
@@ -327,7 +327,7 @@ data:extend(
                 north = {
                     layers = {
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-north.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-north.png',
                             width = 96,
                             height = 96,
                             scale = 0.5,
@@ -337,7 +337,7 @@ data:extend(
                             shift = {0, 0.1875}
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-N.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-N.png',
                             priority = 'extra-high',
                             width = 96,
                             height = 96,
@@ -348,7 +348,7 @@ data:extend(
                             scale = 0.5
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                             priority = 'high',
                             width = 96,
                             height = 96,
@@ -362,7 +362,7 @@ data:extend(
                 east = {
                     layers = {
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-east.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-east.png',
                             width = 96,
                             height = 96,
                             scale = 0.5,
@@ -372,7 +372,7 @@ data:extend(
                             shift = {0, 0.1875}
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-E.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-E.png',
                             priority = 'extra-high',
                             width = 96,
                             height = 96,
@@ -383,7 +383,7 @@ data:extend(
                             scale = 0.5
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                             priority = 'high',
                             width = 96,
                             height = 96,
@@ -397,7 +397,7 @@ data:extend(
                 south = {
                     layers = {
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-south.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-south.png',
                             width = 96,
                             height = 96,
                             scale = 0.5,
@@ -407,7 +407,7 @@ data:extend(
                             shift = {0, 0.1875}
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-S.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-S.png',
                             priority = 'extra-high',
                             width = 96,
                             height = 96,
@@ -418,7 +418,7 @@ data:extend(
                             scale = 0.5
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                             priority = 'high',
                             width = 96,
                             height = 96,
@@ -432,7 +432,7 @@ data:extend(
                 west = {
                     layers = {
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/minipump/hr-minipump-west.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/minipump/hr-minipump-west.png',
                             width = 96,
                             height = 96,
                             scale = 0.5,
@@ -442,7 +442,7 @@ data:extend(
                             shift = {0, 0.1875}
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/arrows/hr-ug-arrow-W.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/arrows/hr-ug-arrow-W.png',
                             priority = 'extra-high',
                             width = 96,
                             height = 96,
@@ -453,7 +453,7 @@ data:extend(
                             scale = 0.5
                         },
                         {
-                            filename = '__underground-pipe-pack__/graphics/entity/shadows/hr-minipump-shadow.png',
+                            filename = '__advanced-fluid-handling-forked__/graphics/entity/shadows/hr-minipump-shadow.png',
                             priority = 'high',
                             width = 96,
                             height = 96,

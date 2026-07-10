@@ -2,7 +2,7 @@ data:extend({
   {
     type = "item",
     name = "swivel-joint",
-    icon = "__underground-pipe-pack__/graphics/icons/swivel-joint.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/swivel-joint.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
@@ -12,7 +12,7 @@ data:extend({
   {
     type = "item",
     name = "small-pipe-coupler",
-    icon = "__underground-pipe-pack__/graphics/icons/small-pipe-coupler.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/small-pipe-coupler.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
@@ -22,7 +22,7 @@ data:extend({
   {
     type = "item",
     name = "medium-pipe-coupler",
-    icon = "__underground-pipe-pack__/graphics/icons/medium-pipe-coupler.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/medium-pipe-coupler.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
@@ -32,7 +32,7 @@ data:extend({
   {
     type = "item",
     name = "large-pipe-coupler",
-    icon = "__underground-pipe-pack__/graphics/icons/large-pipe-coupler.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/large-pipe-coupler.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
@@ -43,7 +43,7 @@ data:extend({
   {
     type = "item",
     name = "underground-pipe-segment-t1",
-    icon = "__underground-pipe-pack__/graphics/icons/underground-pipe-segment-t1.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-pipe-segment-t1.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
@@ -53,7 +53,7 @@ data:extend({
   {
     type = "item",
     name = "underground-pipe-segment-t2",
-    icon = "__underground-pipe-pack__/graphics/icons/underground-pipe-segment-t2.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-pipe-segment-t2.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
@@ -63,7 +63,7 @@ data:extend({
   {
     type = "item",
     name = "underground-pipe-segment-t3",
-    icon = "__underground-pipe-pack__/graphics/icons/underground-pipe-segment-t3.png",
+    icon = "__advanced-fluid-handling-forked__/graphics/icons/underground-pipe-segment-t3.png",
     icon_size = 32,
     flags = nil,
     subgroup = "intermediates",
