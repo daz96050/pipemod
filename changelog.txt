@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 09. 07. 2026
+  Features:
+    - Built-in Pyanodon (pyindustry + pyhightech) compatibility, integrated from the
+      standalone "Advanced Fluid Handling For PyMods" addon (Dremon, created by Sopel).
+      No longer requires a separate download. Activates automatically only when the Py
+      mods are present; normal installs are unaffected.
+    - Adds startup settings (Py only): reskin pipe-to-grounds to match Py pipes, and
+      optionally extend undergrounds by one tile.
+  Changes:
+    - Under Py: recipes, underground distances/extents, braided-pipe categories, pump
+      specs and tech prerequisites are retuned to fit Py; valve flow rates doubled;
+      the 4-to-4 pipe is removed; tiers renamed to Iron / Niobium / Multipurpose.
+---------------------------------------------------------------------------------------------------
 Version: 2.0.7
 Date: 10. 10. 2025
   Changes:

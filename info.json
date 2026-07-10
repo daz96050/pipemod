@@ -1,6 +1,6 @@
 {
   "name": "advanced-fluid-handling-forked",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "factorio_version": "2.1",
   "title": "Advanced Fluid Handling (forked)",
   "author": "daz96050",
@@ -12,6 +12,10 @@
     "(?) Dectorio",
     "(?) space-exploration",
     "(?) boblogistics",
-    "(?) space-age"
+    "(?) space-age",
+    "(?) pyhightech",
+    "(?) pyindustry",
+    "(?) pyalienlife",
+    "(?) py_ht_pipes_reskin"
   ]
 }
