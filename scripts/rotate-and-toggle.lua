@@ -68,7 +68,6 @@ local function plus_valve(event)
     if selection and selection.force == player.force then
         local valve_table = advancedPiping.adjustable_valve_table
         if valve_table[selection.name] and valve_table[selection.name].next_valve then
-            local old_valve_fluid = selection.fluidbox[1]
             local event_data = {
                 entity = selection,
                 player_index = player.index,
@@ -84,7 +83,6 @@ local function plus_valve(event)
                 create_build_effect_smoke = false,
                 spill = false
             }
-            --new_valve.fluidbox[1] = old_valve_fluid
             new_valve.last_user = player
             event_data = {
                 created_entity = new_valve,
@@ -106,7 +104,6 @@ local function minus_valve(event)
     if selection and selection.force == player.force then
         local valve_table = advancedPiping.adjustable_valve_table
         if valve_table[selection.name] and valve_table[selection.name].previous_valve then
-            local old_valve_fluid = selection.fluidbox[1]
             local event_data = {
                 entity = selection,
                 player_index = player.index,
@@ -122,7 +119,6 @@ local function minus_valve(event)
                 create_build_effect_smoke = false,
                 spill = false
             }
-            --new_valve.fluidbox[1] = old_valve_fluid
             new_valve.last_user = player
             event_data = {
                 created_entity = new_valve,
