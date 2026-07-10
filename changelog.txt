@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 09. 07. 2026
+  Bugfixes:
+    - Pipe-to-ground entity ghosts can now be rotated with CTRL + R (previously the rotation
+      was silently ignored on ghosts).
+    - Rotating a pipe-to-ground no longer loses the fluid inside it when the pipe network is
+      full; contents are now saved and restored across the rotation.
+      (Integrated from TheStaplergun/pipemod PR #36.)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.4
 Date: 09. 07. 2026
   Features:
