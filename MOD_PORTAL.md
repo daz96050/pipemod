@@ -61,6 +61,14 @@ materials and hide the intermediate items (couplers, pipe segments, swivel joint
 > ⚠️ While this setting is on, the intermediate items are hidden and disabled — existing
 > blueprints or production lines that build or use them will break.
 
+## Optional: Configurable Valves
+
+If **Configurable Valves** is installed, this mod's fixed overflow/top-up/check valves are
+redundant (theirs are adjustable in direction and threshold). By default their recipes are
+retired so you don't have two overlapping valve sets — existing placed valves and blueprints
+keep working. A startup setting (**"Defer valves to Configurable Valves"**, on by default,
+shown only when that mod is present) lets you keep both.
+
 ## Compatibility
 
 - Factorio **2.1+**.

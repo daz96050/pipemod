@@ -101,6 +101,20 @@ with or without Py.
 3. Simple-recipes (opt-in setting) — flattens whatever the recipe tree currently is.
 Order in `data-updates.lua` is Base → Py → Simple, which is what makes (2)+(3) compose.
 
+## Configurable Valves compatibility (optional, built-in)
+
+When `configurable-valves` is installed, this mod's fixed valves are redundant (Configurable
+Valves' are adjustable in direction and threshold). Gated on `_G.mods["configurable-valves"]`
+plus the startup setting `afh-defer-valves-to-configurable-valves` (default on; the setting
+only appears when that mod is present).
+
+- Entry: `data-updates.lua` requires `prototypes/valve-compat.lua`, **last** (after
+  simplified-recipes) so it also retires any `casting-<valve>` variants that pass may create.
+- It disables + hides the three valve recipes (`80-overflow-valve`, `80-top-up-valve`,
+  `check-valve`), strips their `unlock-recipe` effects from all techs, and hides the items.
+- The valve ENTITIES are intentionally left intact, so existing placed valves and blueprints
+  keep working — only crafting new ones is removed.
+
 ## Dev workflow / tooling
 
 - **Lua interpreter for syntax checks:** `winget install DEVCOM.Lua` (Lua 5.4). Then

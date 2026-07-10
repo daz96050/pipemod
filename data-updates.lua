@@ -11,3 +11,10 @@ end
 if settings.startup["afh-simple-recipes"].value then
     require("prototypes.simple-recipes")
 end
+
+-- Configurable Valves compatibility. Runs LAST so it also retires any valve casting
+-- variants that the simplified-recipes pass may have created.
+if _G.mods["configurable-valves"]
+    and settings.startup["afh-defer-valves-to-configurable-valves"].value then
+    require("prototypes.valve-compat")
+end

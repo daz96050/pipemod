@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 09. 07. 2026
+  Features:
+    - Configurable Valves compatibility: when the "configurable-valves" mod is installed,
+      this mod's fixed overflow/top-up/check valve recipes are retired by default so the two
+      don't overlap (Configurable Valves' valves are adjustable in direction and threshold).
+      Existing placed valves and blueprints keep working. Controlled by a new startup setting
+      ("Defer valves to Configurable Valves", on by default) that only appears when that mod
+      is present.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 09. 07. 2026
   Bugfixes:

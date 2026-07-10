@@ -10,6 +10,21 @@ data:extend({
     }
 })
 
+-- Configurable Valves compatibility (only shown when that mod is present).
+-- When on, this mod's fixed valves are retired in favor of Configurable Valves'
+-- adjustable ones.
+if _G.mods["configurable-valves"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "afh-defer-valves-to-configurable-valves",
+            setting_type = "startup",
+            default_value = true,
+            order = "b"
+        }
+    })
+end
+
 -- Pyanodon compatibility settings.
 -- Only exposed when the Py mods that this compatibility layer targets are present,
 -- so non-Py installs don't see irrelevant options.
