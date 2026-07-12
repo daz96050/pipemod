@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.XX
+Date: UNRELEASED
+  Bugfixes:
+    - The settings on overflow and top-up valves can be changed again.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.8
 Date: 9 July 2026
   Features:
